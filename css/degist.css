@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
+@import url('https://artusvranken.github.io/jackfruit/src/jackfruit.css');
+
+.font-1
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-2
+{
+    font-family: 'Roboto Mono', monospace;
+}
+
+:root
+{
+    --degist-color-1: #222;
+    --degist-color-1-alt: white;
+
+    --degist-color-2: #FAFBFC;
+    --degist-color-2-alt: black;
+}
+
+.degist-header
+{
+    background-color: var(--degist-color-1);
+}
+
+.degist-header-title
+{
+    font-size: 1.8em;
+}
+
+.degist-1
+{
+    background-color: var(--degist-color-1);
+    color: var(--degist-color-1-alt);
+}
+
+.degist-2
+{
+    background-color: var(--degist-color-2);
+    color: var(--degist-color-2-alt);
+}
+
+.degist-header-logo
+{
+    width: 2.5em;
+    height: 2.5em;
+}

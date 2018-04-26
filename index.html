@@ -1,19 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/degist.css">
+
     <title>DeGist | Decentralized Gists</title>
-  </head>
-  
-  <body>
-    
-    <div id="degist-app"></div>
-  
+</head>
+
+<body>
+
+    <div id="degist-app" class="column grow degist-2 font-1 no-margin">
+
+        <!-- header -->
+        <div class="row degist-1 padding-big vertical-center space-between">
+            <div class="row grow vertical-center">
+                <img src="img/logo.png" class="degist-header-logo">
+                <p class="padding-left-big degist-header-title">
+                    <strong>De</strong>Gist
+                </p>
+            </div>
+
+            <div class="button primary">Log In</div>
+        </div>
+
+        <!-- content -->
+        <div class="row grow degist-2">
+            <div class="colum grow"></div>
+
+            <div class="colum grow-1">
+                <div class="card padding-big column">
+                    <h2 class="padding-bottom-big">Log In</h2>
+                    <p>If you want to browse or publish DeGists, click Log In!</p>
+                    <div class="row padding-top-big text-center">
+                        <div class="button primary grow margin-right-small">Log In</div>
+                        <div class="button secondary grow margin-left-small">Register</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="colum grow"></div>
+        </div>
+
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-    <script src="js/bundle.js"></script> 
+    <script src="js/bundle.js"></script>
     <script src="js/degist.js"></script>
-     
-  </body>
+
+</body>
 
 </html>
