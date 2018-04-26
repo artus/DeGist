@@ -1,0 +1,12 @@
+{
+    "name": "DeGist",
+    "start_url": "https://github.io/artusvranken/DeGist/",
+    "description": "Publish your Gists in a decentralized way.",
+    "icons": [
+      {
+        "src": "https://github.io/artusvranken/DeGist/img/logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }

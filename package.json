@@ -1,0 +1,30 @@
+{
+  "name": "degist",
+  "version": "1.0.0",
+  "description": "Decentralized gists.",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artusvranken/DeGist.git"
+  },
+  "keywords": [
+    "Blockstack"
+  ],
+  "author": "Artus Vranken",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artusvranken/DeGist/issues"
+  },
+  "homepage": "https://github.com/artusvranken/DeGist#readme",
+  "devDependencies": {
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
+  },
+  "dependencies": {
+    "blockstack": "^0.17.2"
+  }
+}
