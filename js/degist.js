@@ -61,7 +61,7 @@ var degistApp = new Vue({
             this.blockstack.putFile('degist.json', JSON.stringify({ degists: this.degists }), { encrypt: true }).catch(console.log);
 
             // Save the new DeGist 
-            this.blockstack.putFile('degist.json', JSON.stringify(newDeGist), { encrypt: false }).catch(console.log);
+            this.blockstack.putFile("degist-" + newDeGist.id + ".json", JSON.stringify(newDeGist), { encrypt: false }).catch(console.log);
             this.concreteDeGists.unshift(newDeGist);
 
             // Clear inputs
