@@ -58,7 +58,7 @@
                         <label class="padding-bottom-small">Content</label>
                         <textarea v-model="newDeGistInput" class="padding margin-bottom-small" placeholder="console.log('Hello world!');"></textarea>
                     </div>
-                    <div class="button primary grow">Save!</div>
+                    <div class="button primary grow" v-on:click="saveDeGists()">Save!</div>
                 </div>
 
                 <!-- All DeGists -->

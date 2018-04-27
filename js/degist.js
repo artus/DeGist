@@ -40,7 +40,7 @@ var degistApp = new Vue({
         loadConcreteDeGists() {
             for (let deGistId of this.degists) {
                 this.blockstack.getFile("degist-" + deGistId + ".json", { decrypt: false }).then(response => {
-                    this.loadConcreteDeGists.push(JSON.parse(response));
+                    this.concreteDeGists.push(JSON.parse(response));
                 }).catch(console.log);
             }
         },
@@ -57,7 +57,7 @@ var degistApp = new Vue({
             };
 
             // Add the new DeGist to the degist.json
-            this.degists.push(newDeGist.id);
+            this.degists.unshift(newDeGist.id);
             this.blockstack.putFile('degist.json', JSON.stringify({ degists: this.degists }), { encrypt: true }).catch(console.log);
 
             // Save the new DeGist 
