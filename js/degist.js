@@ -35,13 +35,13 @@ var degistApp = new Vue({
                 this.degists = JSON.parse(file).degists;
                 this.loadConcreteDeGists();
 
-            }).catch(alert);
+            }).catch(console.log);
         },
         loadConcreteDeGists() {
             for (let deGistId of this.degists) {
                 this.blockstack.getFile("degist-" + deGistId + ".json", { decrypt: false }).then(response => {
                     this.loadConcreteDeGists.push(JSON.parse(response));
-                }).catch(alert);
+                }).catch(console.log);
             }
         },
         saveDeGists() {
@@ -58,10 +58,10 @@ var degistApp = new Vue({
 
             // Add the new DeGist to the degist.json
             this.degists.push(newDeGist.id);
-            this.blockstack.putFile('degist.json', JSON.stringify({ degists: this.degists }), { encrypt: true }).catch(alert);
+            this.blockstack.putFile('degist.json', JSON.stringify({ degists: this.degists }), { encrypt: true }).catch(console.log);
 
             // Save the new DeGist 
-            this.blockstack.putFile('degist.json', JSON.stringify(newDeGist), { encrypt: false }).catch(alert);
+            this.blockstack.putFile('degist.json', JSON.stringify(newDeGist), { encrypt: false }).catch(console.log);
             this.concreteDeGists.unshift(newDeGist);
 
             // Clear inputs
