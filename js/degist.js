@@ -14,13 +14,11 @@ var degistApp = new Vue({
                 // User is logged in
             }
         },
-        loginClicked() {
-            this.blockstack.redirectToSignIn();
-            //this.blockstack.redirectToSignIn(window.location.href, window.location.href + "manifest.json", ['store_write', 'publish_data']);
+        login() {
+            this.blockstack.redirectToSignIn(window.location.href, "https://artusvranken.github.io/DeGist/manifest.json", ['store_write', 'publish_data']);
         },
-        logoutClicked() {
-            //this.blockstack.signUserOut(window.location.href);
-            this.blockstack.signUserOut();
+        logout() {
+            this.blockstack.signUserOut(window.location.href);
         },
     }
 });
