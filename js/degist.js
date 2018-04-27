@@ -22,3 +22,5 @@ var degistApp = new Vue({
         },
     }
 });
+
+degistApp.checkLogin();
