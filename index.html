@@ -63,8 +63,8 @@
 
                 <!-- All DeGists -->
                 <div class="card padding-big column rounded-small" v-for="degist in concreteDeGists">
-                    <h3>{{degist.title}}</h3>
-                    <h6>{{ new Date(degist.date).toLocaleDateString() }}</h6>
+                    <h3 class="padding-bottom">{{degist.title}}</h3>
+                    <h6 class="padding-bottom-small">{{ new Date(degist.date).toLocaleDateString() }}</h6>
                     <p>{{degist.content}}</p>
                 </div>
 
