@@ -50,13 +50,13 @@
 
                 <!-- New DeGist -->
                 <div class="card padding-big column rounded-small" v-if="blockstack.isUserSignedIn()">
-                    <div class="form-group">
+                    <div class="form-group no-padding">
                         <label class="padding-bottom-small">Title</label>
-                        <input v-model="newDeGistTitleInput" class="margin-right-none" placeholder="DeGist Title">
+                        <input v-model="newDeGistTitleInput" class="no-margin-right" placeholder="DeGist Title">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group no-padding">
                         <label class="padding-bottom-small">Content</label>
-                        <textarea v-model="newDeGistInput" class="padding margin-bottom-small" placeholder="console.log('Hello world!');"></textarea>
+                        <textarea v-model="newDeGistInput" class="padding margin-bottom-small no-margin-right" placeholder="console.log('Hello world!');"></textarea>
                     </div>
                     <div class="button primary grow" v-on:click="saveDeGists()">Save!</div>
                 </div>
@@ -67,7 +67,6 @@
                     <h6 class="padding-bottom-small">{{ new Date(degist.date).toLocaleDateString() }}</h6>
                     <p>{{degist.content}}</p>
                 </div>
-
 
             </div>
 
