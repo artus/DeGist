@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const path = require("path");
 
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const UglifyJsPluginConfig = new UglifyJsPlugin({
@@ -23,7 +24,8 @@ module.exports = {
     entry: './js/requires.js',
     target: 'web',
     output: {
-        filename: './js/bundle.js',
+        path: path.resolve(__dirname, "js"),
+        filename: 'bundle.js',
     }, plugins: [
         UglifyJsPluginConfig
     ]
