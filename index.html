@@ -22,7 +22,14 @@
                 </p>
             </div>
 
-            <div class="button primary">Log In</div>
+            <div class="row grow vertical-center" v-if="!blockstack.isUserSignedIn()">
+                <div class="button primary" v-on:click="login()">Log In</div>
+            </div>
+
+            <div class="row grow vertical-center" v-if="blockstack.isUserSignedIn()">
+                <div class="button-secondary margin-right-small">+</div>
+                <div class="button primary" v-on:click="logout()">Log Out</div>
+            </div>
         </div>
 
         <!-- content -->
@@ -30,7 +37,8 @@
             <div class="colum grow"></div>
 
             <div class="colum grow-1">
-                <div class="card padding-big column rounded-small">
+
+                <div class="card padding-big column rounded-small" v-if="!blockstack.isUserSignedIn()">
                     <h2 class="padding-bottom-big">Log In</h2>
                     <p>If you want to browse or publish DeGists, click Log In!</p>
                     <div class="row padding-top-big text-center">
@@ -38,6 +46,8 @@
                         <div class="button secondary grow margin-left-small" v-on:click="login()">Register</div>
                     </div>
                 </div>
+
+
             </div>
 
             <div class="colum grow"></div>

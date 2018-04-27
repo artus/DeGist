@@ -1,12 +1,12 @@
 {
-    "name": "DeGist",
-    "start_url": "https://github.io/artusvranken/DeGist/",
-    "description": "Publish your Gists in a decentralized way.",
-    "icons": [
-      {
-        "src": "https://artusvranken.github.io/DeGist/img/logo.png",
-        "sizes": "192x192",
-        "type": "image/png"
-      }
-    ]
-  }
+  "name": "DeGist",
+  "start_url": "https://github.io/artusvranken/DeGist/",
+  "description": "Publish your Gists in a decentralized way.",
+  "icons": [
+    {
+      "src": "https://artusvranken.github.io/DeGist/img/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
