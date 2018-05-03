@@ -5,7 +5,8 @@
   "main": "dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "webpack"
+    "bundle": "webpack",
+    "start": "http-server ./public -o -a localhost -p 5050 --cors -c -1"
   },
   "repository": {
     "type": "git",
@@ -21,10 +22,13 @@
   },
   "homepage": "https://github.com/artusvranken/DeGist#readme",
   "devDependencies": {
+    "http-server": "^0.11.1",
+    "uglify-es-webpack-plugin": "^0.10.0",
     "webpack": "^4.6.0",
     "webpack-cli": "^2.0.15"
   },
   "dependencies": {
-    "blockstack": "^0.17.2"
+    "blockstack": "^17.2.0",
+    "express": "^4.16.3"
   }
 }

@@ -1,0 +1,21 @@
+{
+  "name": "degist-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "blockstack": "^17.2.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4",
+    "uuid": "^3.2.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-app-rewired": "^1.5.2"
+  }
+}
