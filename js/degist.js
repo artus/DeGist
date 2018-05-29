@@ -16,7 +16,7 @@ var degistApp = new Vue({
         checkLogin() {
             if (this.blockstack.isSignInPending()) {
                 this.blockstack.handlePendingSignIn().then(response => {
-                    window.location = "https://artusvranken.github.io/DeGist/";
+                    window.location = "https://artus.github.io/DeGist/";
                 });
             }
             else if (this.blockstack.isUserSignedIn()) {
@@ -24,7 +24,7 @@ var degistApp = new Vue({
             }
         },
         login() {
-            this.blockstack.redirectToSignIn(window.location.href, "https://artusvranken.github.io/DeGist/manifest.json", ['store_write', 'publish_data']);
+            this.blockstack.redirectToSignIn(window.location.href, "https://artus.github.io/DeGist/manifest.json", ['store_write', 'publish_data']);
         },
         logout() {
             this.blockstack.signUserOut(window.location.href);
